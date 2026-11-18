@@ -19,6 +19,27 @@
     }
   });
 
+  /* ---------- Meta Pixel: InitiateCheckout when someone taps "Get the book" ----------
+     The value is read from the price on the page (.price__now), so it stays in step with it.
+     The checkout opens in the same tab, so a plain click waits a moment (max 300ms)
+     to let the event reach Meta before leaving the page. */
+  var priceEl = $('.price__now');
+  var price = priceEl ? parseFloat(priceEl.textContent.replace(/[^0-9.]/g, '')) : 0;
+  var checkoutSent = false;
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('[data-buy]');
+    if (!a || typeof window.fbq !== 'function') return;
+    var params = { currency: 'INR', content_name: 'PCOS, Made Simple', content_type: 'product', num_items: 1 };
+    if (price) params.value = price;
+    if (!checkoutSent) { window.fbq('track', 'InitiateCheckout', params); checkoutSent = true; }
+    /* New tab / modified clicks leave this page open, so no wait is needed. */
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || a.target === '_blank') return;
+    e.preventDefault();
+    var href = a.href, left = false;
+    function leave() { if (!left) { left = true; window.location.href = href; } }
+    setTimeout(leave, 300);
+  });
+
   var y = $('#year'); if (y) y.textContent = new Date().getFullYear();
 
   /* ---------- Landing animation: wait only for the cover, never more than 1.2s ---------- */

@@ -14,7 +14,7 @@ Open `index.html` in a browser. Or, for a closer match to a real website, run th
 
 2. **Check the "What format is the book?" answer** in the FAQ (search `What format` in `index.html`). It currently says "a digital book you can read on your phone, tablet or computer". Change it if you deliver a PDF, an ePub or something else.
 
-3. **Set the full share-image address.** In the `<head>` of `index.html`, change `content="assets/img/og-image.jpg"` to your full address, for example `https://yourdomain.com/assets/img/og-image.jpg`. Facebook and WhatsApp need the full address.
+3. **Share-image address (done).** The site lives at `https://pcos-made-simple.vercel.app/`, and the share image, `og:url` and canonical link in the `<head>` of `index.html` use that address. If you move to your own domain, search `pcos-made-simple.vercel.app` in `index.html` and replace all three.
 
 4. **Add legal pages** (privacy policy, terms, refund policy) and a contact email in the footer. Meta and most payment providers ask for them.
 
@@ -51,5 +51,5 @@ The page images come from the final book PDF: contents (PDF page 6), Introductio
 - **Colours** follow the book's style guide: Soft Rose `#C9727E`, Sage `#8FA98F`, Warm Peach `#F6E3D9`, Charcoal `#333333`, Georgia for headings. Buttons use a deeper rose (`#A9515F`) so white text stays easy to read.
 - **Motion** is gentle: one landing animation in the hero, light parallax on photos and flowers, and a book that follows the mouse on desktop. Everything switches off for visitors who have "reduce motion" turned on.
 - **The Starter Checklist** on the page remembers ticks on that visitor's own device. Nothing is sent anywhere.
-- **No tracking is installed.** When you add the Meta Pixel later, add its snippet before `</head>` in `index.html`.
+- **Meta Pixel** (ID `2067695027270790`) is installed. Its code is in the `<head>` of `index.html` and sends **PageView** when the page opens. `assets/js/main.js` sends **InitiateCheckout** (INR, value read from the `price__now` price) when someone taps any "Get the book" button. **Purchase** is not sent from this site: the sale happens on Superprofile, so paste the same Pixel ID into Superprofile's Meta Pixel setting. Because the Pixel is installed, the privacy policy should say the site uses the Meta Pixel.
 - **Ad rules:** the page never says "Do you have PCOS?" or "Your PCOS", uses no before-and-after images and promises no cure.
