@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    document.documentElement.classList.add('js');
+    /* Always open at the top (unless a #link was used), even after a reload. */
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    /* Safety net: if the main script is slow or blocked, still show the hero. */
+    setTimeout(function () { var h = document.querySelector('.hero'); if (h) h.classList.add('is-go'); }, 4000);
+  </script>
+
+  <title>PCOS, Made Simple: a kind, practical guide to PCOS and PCOD</title>
+  <meta name="description" content="A simple, friendly book that explains what is happening in your body in plain English, with clear steps for food, movement, sleep, stress, skin, hair, periods and fertility. Includes a starter checklist and 12 printable worksheets.">
+  <meta name="theme-color" content="#FFF9F5">
+  <meta name="color-scheme" content="light">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PCOS, Made Simple">
+  <meta property="og:description" content="A kind, practical guide to PCOS and PCOD for every woman. Plain English, simple steps, a starter checklist and 12 printable worksheets.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" as="image" type="image/avif" href="assets/img/cover-740.avif" imagesrcset="assets/img/cover-400.avif 400w, assets/img/cover-740.avif 740w" imagesizes="(min-width: 760px) 370px, 270px" fetchpriority="high">
+  <link rel="preload" as="font" type="font/woff" href="assets/fonts/carlito-regular.woff" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<!--
+  Checkout: every "Get the book" button links to the Superprofile page below.
+  To change it, update the href on each data-buy link and data-checkout-url on the body tag.
+  The price shown on the page is in the buy section (search for price__now). Keep it in step with Superprofile.
+-->
+<body data-checkout-url="https://superprofile.bio/vp/pcos--made-simple--a-kind--practical-guide-to-pcos---pcod">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="wrap site-header__row">
+      <a class="brand" href="#top" aria-label="PCOS, Made Simple, back to top">
+        <span class="brand__a">PCOS,</span> <span class="brand__b">Made Simple</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#inside">Inside the book</a>
+        <a href="#look-inside">Look inside</a>
+        <a href="#cheat-sheets">Cheat sheets</a>
+        <a href="#faq">Questions</a>
+      </nav>
+      <a class="btn btn--primary btn--sm" href="https://superprofile.bio/vp/pcos--made-simple--a-kind--practical-guide-to-pcos---pcod" data-buy>Get the book</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <div class="bots" aria-hidden="true">
+        <div class="bot bot--vine" style="--i:0;--rot:0deg" data-parallax="-0.04"><div class="bot__in"><picture><source type="image/avif" srcset="assets/img/bot-vine-560.avif 560w, assets/img/bot-vine-900.avif 900w" sizes="(min-width: 760px) 62vw, 110vw"><source type="image/webp" srcset="assets/img/bot-vine-560.webp 560w, assets/img/bot-vine-900.webp 900w" sizes="(min-width: 760px) 62vw, 110vw"><img alt="" src="assets/img/bot-vine-900.webp" width="900" height="176" fetchpriority="low" decoding="async"></picture></div></div>
+        <div class="bot bot--a" style="--i:1;--rot:7deg" data-parallax="-0.07"><div class="bot__in"><picture><source type="image/avif" srcset="assets/img/bot-flower-a-400.avif 400w"><source type="image/webp" srcset="assets/img/bot-flower-a-400.webp 400w"><img alt="" src="assets/img/bot-flower-a-400.webp" width="400" height="726" fetchpriority="low" decoding="async"></picture></div></div>
+        <div class="bot bot--b" style="--i:2;--rot:-5deg" data-parallax="0.05"><div class="bot__in"><picture><source type="image/avif" srcset="assets/img/bot-flower-b-340.avif 340w"><source type="image/webp" srcset="assets/img/bot-flower-b-340.webp 340w"><img alt="" src="assets/img/bot-flower-b-340.webp" width="340" height="622" fetchpriority="low" decoding="async"></picture></div></div>
+        <div class="bot bot--c" style="--i:3;--rot:10deg" data-parallax="-0.1"><div class="bot__in"><picture><source type="image/avif" srcset="assets/img/bot-flower-c-220.avif 220w"><source type="image/webp" srcset="assets/img/bot-flower-c-220.webp 220w"><img alt="" src="assets/img/bot-flower-c-220.webp" width="220" height="369" fetchpriority="low" decoding="async" loading="lazy"></picture></div></div>
+        <div class="bot bot--l1" style="--i:4;--rot:24deg" data-parallax="0.09"><div class="bot__in"><picture><source type="image/avif" srcset="assets/img/bot-leaf-1-220.avif 220w"><source type="image/webp" srcset="assets/img/bot-leaf-1-220.webp 220w"><img alt="" src="assets/img/bot-leaf-1-220.webp" width="220" height="364" fetchpriority="low" decoding="async"></picture></div></div>
+        <div class="bot bot--l2" style="--i:5;--rot:-28deg" data-parallax="-0.05"><div class="bot__in"><picture><source type="image/avif" srcset="assets/img/bot-leaf-3-170.avif 170w"><source type="image/webp" srcset="assets/img/bot-leaf-3-170.webp 170w"><img alt="" src="assets/img/bot-leaf-3-170.webp" width="170" height="275" fetchpriority="low" decoding="async" loading="lazy"></picture></div></div>
+        <div class="bot bot--l3" style="--i:6;--rot:-14deg" data-parallax="0.06"><div class="bot__in"><picture><source type="image/avif" srcset="assets/img/bot-leaf-2-170.avif 170w"><source type="image/webp" srcset="assets/img/bot-leaf-2-170.webp 170w"><img alt="" src="assets/img/bot-leaf-2-170.webp" width="170" height="379" fetchpriority="low" decoding="async"></picture></div></div>
+      </div>
+
+      <div class="wrap hero__inner">
+        <h1 class="hero__title" id="heroTitle">
+          <span class="line" style="--i:0"><span>PCOS,</span></span>
+          <span class="line line--rose" style="--i:1"><span>Made Simple</span></span>
+        </h1>
+
+        <div class="hero__book">
+          <div class="stage">
+            <div class="tilt" id="tilt">
+              <div class="book" role="img" aria-label="The book cover of PCOS, Made Simple: a kind, practical guide to PCOS and PCOD for every woman">
+                <div class="book__face book__front"><picture><source type="image/avif" srcset="assets/img/cover-400.avif 400w, assets/img/cover-740.avif 740w" sizes="(min-width: 760px) 370px, 270px"><source type="image/webp" srcset="assets/img/cover-400.webp 400w, assets/img/cover-740.webp 740w" sizes="(min-width: 760px) 370px, 270px"><img alt="" src="assets/img/cover-740.webp" width="740" height="1183" fetchpriority="high" decoding="async"></picture></div>
+                <div class="book__face book__spine"><span>PCOS, Made Simple</span></div>
+                <div class="book__face book__edge"></div>
+                <div class="book__face book__top"></div>
+              </div>
+            </div>
+            <div class="book__shadow"></div>
+          </div>
+        </div>
+
+        <p class="hero__lead hf" style="--d:.95s">
+          A kind, practical guide to PCOS and PCOD for every woman. Understand what is happening in your body, in plain words, and take small steps that help.
+        </p>
+
+        <div class="hero__cta hf" style="--d:1.1s">
+          <a class="btn btn--primary" href="https://superprofile.bio/vp/pcos--made-simple--a-kind--practical-guide-to-pcos---pcod" data-buy>Get the book</a>
+          <a class="btn btn--ghost" href="#inside">See what's inside</a>
+        </div>
+
+        <ul class="hero__facts hf" style="--d:1.25s">
+          <li>Plain English, with every medical word explained</li>
+          <li>Food ideas from kitchens around the world</li>
+          <li>12 printable worksheets and trackers</li>
+          <li>A starter checklist, from this week to every year</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ What you get ============ -->
+    <section class="sec offer" id="offer" aria-labelledby="offerTitle">
+      <div class="wrap offer__grid">
+        <div class="offer__intro">
+          <h2 id="offerTitle">Everything you need, in one gentle book</h2>
+          <p class="tag">Understand your body first. Then take one small step at a time.</p>
+          <div class="frame frame--photo">
+            <picture><source type="image/avif" srcset="assets/img/book-open-480.avif 480w, assets/img/book-open-800.avif 800w, assets/img/book-open-1200.avif 1200w" sizes="(min-width: 760px) 46vw, 100vw"><source type="image/webp" srcset="assets/img/book-open-480.webp 480w, assets/img/book-open-800.webp 800w, assets/img/book-open-1200.webp 1200w" sizes="(min-width: 760px) 46vw, 100vw"><img data-parallax-img="0.08"   alt="A woman's hands resting on an open book beside a cup of tea and a plant" loading="lazy" src="assets/img/book-open-800.webp" width="1200" height="800" decoding="async"></picture>
+          </div>
+        </div>
+
+        <ul class="offer__list">
+          <li>
+            <h3>In-depth knowledge, in simple words</h3>
+            <p>What PCOS is, why it happens, which signs to notice and how doctors check for it. Explained with easy comparisons, like insulin being a key that opens your cells.</p>
+          </li>
+          <li>
+            <h3>Practical guides for daily life</h3>
+            <p>Food, movement, sleep, stress, skin, hair, periods and fertility. Each chapter ends with one small thing to try today.</p>
+          </li>
+          <li>
+            <h3>A starter checklist</h3>
+            <p>Clear steps for this week, the first month, the first three months and every year after. Tick them at your own pace.</p>
+          </li>
+          <li>
+            <h3>12 printable worksheets and trackers</h3>
+            <p>Track your periods, signs, habits and health checks. Plan meals and movement. Fill in your own one-page plan.</p>
+          </li>
+          <li>
+            <h3>Tools for your doctor visits</h3>
+            <p>A visit checklist, a family health map and a page of questions to ask, so you walk in feeling ready.</p>
+          </li>
+          <li>
+            <h3>Cheat sheets and a simple glossary</h3>
+            <p>A grocery list, quick meal ideas, and an A to Z list of body and food words, explained in one line each.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ Photo band: quote ============ -->
+    <section class="band band--one" aria-label="A message from the book">
+      <div class="band__media"><picture><source type="image/avif" srcset="assets/img/lifestyle-01-800.avif 800w, assets/img/lifestyle-01-1200.avif 1200w, assets/img/lifestyle-01-1586.avif 1586w" sizes="100vw"><source type="image/webp" srcset="assets/img/lifestyle-01-800.webp 800w, assets/img/lifestyle-01-1200.webp 1200w, assets/img/lifestyle-01-1586.webp 1586w" sizes="100vw"><img data-parallax-img="0.1" alt="A woman smiling softly as she holds a cup of tea by a sunny window" loading="lazy" src="assets/img/lifestyle-01-1200.webp" width="1586" height="992" decoding="async"></picture></div>
+      <div class="wrap band__wrap">
+        <blockquote class="note note--quote">
+          <p>Your body is not broken. It just needs a little understanding.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ Inside the book ============ -->
+    <section class="sec inside" id="inside" aria-labelledby="insideTitle">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 id="insideTitle">Six parts, one step at a time</h2>
+          <p class="tag">Read in order, or jump to what you need today.</p>
+        </div>
+
+        <div class="parts" id="parts">
+          <div class="parts__tabs" role="tablist" aria-label="Parts of the book" aria-orientation="vertical">
+            <button class="parts__tab" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true"><span class="parts__n">Part 1</span> Understanding your body</button>
+            <button class="parts__tab" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1"><span class="parts__n">Part 2</span> Food that helps</button>
+            <button class="parts__tab" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1"><span class="parts__n">Part 3</span> Movement, sleep and stress</button>
+            <button class="parts__tab" role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false" tabindex="-1"><span class="parts__n">Part 4</span> Skin, hair and confidence</button>
+            <button class="parts__tab" role="tab" id="tab-5" aria-controls="panel-5" aria-selected="false" tabindex="-1"><span class="parts__n">Part 5</span> Periods, fertility and your future</button>
+            <button class="parts__tab" role="tab" id="tab-6" aria-controls="panel-6" aria-selected="false" tabindex="-1"><span class="parts__n">Part 6</span> Living well long-term</button>
+          </div>
+
+          <div class="parts__panels">
+            <article class="panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
+              <h3>Part 1: Understanding your body</h3>
+              <p class="panel__lead">What PCOS is, why it happens, the signs, and how doctors check for it.</p>
+              <ol class="chapters" start="1">
+                <li>What is PCOS? A simple start</li>
+                <li>Why PCOS happens</li>
+                <li>Signs to notice</li>
+                <li>Getting diagnosed</li>
+              </ol>
+              <div class="note note--try"><strong>Try this today</strong><p>Ask your mother, sisters or aunts if they had irregular periods, diabetes or PCOS. Write it down to share with your doctor.</p></div>
+            </article>
+
+            <article class="panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2">
+              <h3>Part 2: Food that helps</h3>
+              <p class="panel__lead">Simple, balanced meals with local, low-cost food, and how to handle cravings.</p>
+              <ol class="chapters" start="5">
+                <li>Eating for PCOS</li>
+                <li>Simple meals</li>
+                <li>Sugar cravings and smart swaps</li>
+              </ol>
+              <div class="note note--try"><strong>Try this today</strong><p>At your next meal, fill half your plate with vegetables first, then add the rest.</p></div>
+            </article>
+
+            <article class="panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3">
+              <h3>Part 3: Movement, sleep and stress</h3>
+              <p class="panel__lead">Easy ways to move, sleep better and calm your mind.</p>
+              <ol class="chapters" start="8">
+                <li>Move your body</li>
+                <li>Weight and kindness</li>
+                <li>Better sleep</li>
+                <li>Calming stress and caring for your mind</li>
+              </ol>
+              <div class="note note--try"><strong>Try this today</strong><p>Put your phone away 30 minutes before bed tonight.</p></div>
+            </article>
+
+            <article class="panel" role="tabpanel" id="panel-4" aria-labelledby="tab-4">
+              <h3>Part 4: Skin, hair and confidence</h3>
+              <p class="panel__lead">Gentle care for acne, extra hair growth and hair fall.</p>
+              <ol class="chapters" start="12">
+                <li>Clearer, calmer skin</li>
+                <li>Extra hair growth</li>
+                <li>Hair fall and thinning</li>
+              </ol>
+              <div class="note note--try"><strong>Try this today</strong><p>Wash your face gently twice a day, and try not to pick at spots.</p></div>
+            </article>
+
+            <article class="panel" role="tabpanel" id="panel-5" aria-labelledby="tab-5">
+              <h3>Part 5: Periods, fertility and your future</h3>
+              <p class="panel__lead">Your cycle, your hopes for a baby, and your long-term health.</p>
+              <ol class="chapters" start="15">
+                <li>Irregular periods</li>
+                <li>Fertility and PCOS</li>
+                <li>Long-term health</li>
+              </ol>
+              <div class="note note--try"><strong>Try this today</strong><p>Mark today on your Period Tracker. Your record starts now.</p></div>
+            </article>
+
+            <article class="panel" role="tabpanel" id="panel-6" aria-labelledby="tab-6">
+              <h3>Part 6: Living well long-term</h3>
+              <p class="panel__lead">Habits that last, support from loved ones, and your plan for life.</p>
+              <ol class="chapters" start="18">
+                <li>Building habits that last</li>
+                <li>Family, friends and support</li>
+                <li>Your PCOS plan for life</li>
+              </ol>
+              <div class="note note--try"><strong>Try this today</strong><p>Pick one tiny habit and attach it to something you already do, like a glass of water after brushing your teeth.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ Look inside ============ -->
+    <section class="sec peek" id="look-inside" aria-labelledby="peekTitle">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 id="peekTitle">Look inside the book</h2>
+          <p class="tag">Real pages, just as you will read them. Tap any page to see it up close.</p>
+        </div>
+
+        <div class="peek__stage">
+          <ol class="peek__track" id="peekTrack" tabindex="0" aria-label="Pages from the book">
+            <li class="peek__page peek__page--l">
+              <button class="peek__btn" type="button" data-lb="preview" data-lb-src="contents" data-lb-caption="Contents" aria-label="Open larger: Contents">
+                <picture><source type="image/avif" srcset="assets/img/pages/contents-480.avif 480w, assets/img/pages/contents-900.avif 900w" sizes="(min-width: 760px) 440px, 78vw"><source type="image/webp" srcset="assets/img/pages/contents-480.webp 480w, assets/img/pages/contents-900.webp 900w" sizes="(min-width: 760px) 440px, 78vw"><img src="assets/img/pages/contents-480.webp" alt="The contents page, listing the introduction, 20 chapters in six parts, the starter checklist and the appendix" width="900" height="1273" loading="lazy" decoding="async"></picture>
+              </button>
+              <span class="peek__cap">Contents</span>
+            </li>
+            <li class="peek__page peek__page--r">
+              <button class="peek__btn" type="button" data-lb="preview" data-lb-src="intro" data-lb-caption="Introduction" aria-label="Open larger: Introduction">
+                <picture><source type="image/avif" srcset="assets/img/pages/intro-480.avif 480w, assets/img/pages/intro-900.avif 900w" sizes="(min-width: 760px) 440px, 78vw"><source type="image/webp" srcset="assets/img/pages/intro-480.webp 480w, assets/img/pages/intro-900.webp 900w" sizes="(min-width: 760px) 440px, 78vw"><img src="assets/img/pages/intro-480.webp" alt="The first page of the introduction, with Amina's story" width="900" height="1273" loading="lazy" decoding="async"></picture>
+              </button>
+              <span class="peek__cap">Introduction</span>
+            </li>
+            <li class="peek__page peek__page--l">
+              <button class="peek__btn" type="button" data-lb="preview" data-lb-src="ch01" data-lb-caption="Chapter 1 opener" aria-label="Open larger: Chapter 1 opener">
+                <picture><source type="image/avif" srcset="assets/img/pages/ch01-480.avif 480w, assets/img/pages/ch01-900.avif 900w" sizes="(min-width: 760px) 440px, 78vw"><source type="image/webp" srcset="assets/img/pages/ch01-480.webp 480w, assets/img/pages/ch01-900.webp 900w" sizes="(min-width: 760px) 440px, 78vw"><img src="assets/img/pages/ch01-480.webp" alt="The opening page of Chapter 1, What Is PCOS? A Simple Start" width="900" height="1273" loading="lazy" decoding="async"></picture>
+              </button>
+              <span class="peek__cap">Chapter 1 opener</span>
+            </li>
+            <li class="peek__page peek__page--r">
+              <button class="peek__btn" type="button" data-lb="preview" data-lb-src="ch01-simple" data-lb-caption="In Simple Words" aria-label="Open larger: In Simple Words">
+                <picture><source type="image/avif" srcset="assets/img/pages/ch01-simple-480.avif 480w, assets/img/pages/ch01-simple-900.avif 900w" sizes="(min-width: 760px) 440px, 78vw"><source type="image/webp" srcset="assets/img/pages/ch01-simple-480.webp 480w, assets/img/pages/ch01-simple-900.webp 900w" sizes="(min-width: 760px) 440px, 78vw"><img src="assets/img/pages/ch01-simple-480.webp" alt="A page from Chapter 1 explaining follicles in an In Simple Words box" width="900" height="1273" loading="lazy" decoding="async"></picture>
+              </button>
+              <span class="peek__cap">In Simple Words</span>
+            </li>
+            <li class="peek__page peek__page--l">
+              <button class="peek__btn" type="button" data-lb="preview" data-lb-src="plate" data-lb-caption="The balanced plate" aria-label="Open larger: The balanced plate">
+                <picture><source type="image/avif" srcset="assets/img/pages/plate-480.avif 480w, assets/img/pages/plate-900.avif 900w" sizes="(min-width: 760px) 440px, 78vw"><source type="image/webp" srcset="assets/img/pages/plate-480.webp 480w, assets/img/pages/plate-900.webp 900w" sizes="(min-width: 760px) 440px, 78vw"><img src="assets/img/pages/plate-480.webp" alt="The balanced plate table from Chapter 5, with food examples from around the world" width="900" height="1273" loading="lazy" decoding="async"></picture>
+              </button>
+              <span class="peek__cap">The balanced plate</span>
+            </li>
+            <li class="peek__page peek__page--r">
+              <button class="peek__btn" type="button" data-lb="preview" data-lb-src="recipe" data-lb-caption="Quick recipes" aria-label="Open larger: Quick recipes">
+                <picture><source type="image/avif" srcset="assets/img/pages/recipe-480.avif 480w, assets/img/pages/recipe-900.avif 900w" sizes="(min-width: 760px) 440px, 78vw"><source type="image/webp" srcset="assets/img/pages/recipe-480.webp 480w, assets/img/pages/recipe-900.webp 900w" sizes="(min-width: 760px) 440px, 78vw"><img src="assets/img/pages/recipe-480.webp" alt="Two quick recipes from Chapter 6: a lentil soup and a chickpea salad" width="900" height="1273" loading="lazy" decoding="async"></picture>
+              </button>
+              <span class="peek__cap">Quick recipes</span>
+            </li>
+            <li class="peek__page peek__page--l">
+              <button class="peek__btn" type="button" data-lb="preview" data-lb-src="calm" data-lb-caption="Calming tools" aria-label="Open larger: Calming tools">
+                <picture><source type="image/avif" srcset="assets/img/pages/calm-480.avif 480w, assets/img/pages/calm-900.avif 900w" sizes="(min-width: 760px) 440px, 78vw"><source type="image/webp" srcset="assets/img/pages/calm-480.webp 480w, assets/img/pages/calm-900.webp 900w" sizes="(min-width: 760px) 440px, 78vw"><img src="assets/img/pages/calm-480.webp" alt="The calming tools table from Chapter 11" width="900" height="1273" loading="lazy" decoding="async"></picture>
+              </button>
+              <span class="peek__cap">Calming tools</span>
+            </li>
+            <li class="peek__page peek__page--r">
+              <button class="peek__btn" type="button" data-lb="preview" data-lb-src="checklist" data-lb-caption="Starter Checklist" aria-label="Open larger: Starter Checklist">
+                <picture><source type="image/avif" srcset="assets/img/pages/checklist-480.avif 480w, assets/img/pages/checklist-900.avif 900w" sizes="(min-width: 760px) 440px, 78vw"><source type="image/webp" srcset="assets/img/pages/checklist-480.webp 480w, assets/img/pages/checklist-900.webp 900w" sizes="(min-width: 760px) 440px, 78vw"><img src="assets/img/pages/checklist-480.webp" alt="The first page of Your PCOS Starter Checklist" width="900" height="1273" loading="lazy" decoding="async"></picture>
+              </button>
+              <span class="peek__cap">Starter Checklist</span>
+            </li>
+          </ol>
+          <div class="peek__nav">
+            <button class="round" type="button" id="peekPrev" aria-label="Previous pages">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+            </button>
+            <p class="peek__count" id="peekCount" aria-live="polite">Pages 1 and 2 of 8</p>
+            <button class="round" type="button" id="peekNext" aria-label="Next pages">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ How the book talks ============ -->
+    <section class="sec voice" id="voice" aria-labelledby="voiceTitle">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 id="voiceTitle">Written like a kind older sister</h2>
+          <p class="tag">Short sentences. Every medical word explained once, right where you meet it.</p>
+        </div>
+
+        <div class="voice__grid">
+          <aside class="note">
+            <strong>In simple words</strong>
+            <p>PCOS is a common hormone problem. <b>Hormones</b> are your body's tiny messengers. They tell different parts of your body what to do. In PCOS, some of these messages get a little mixed up. This can affect your periods, skin, hair, weight and mood.</p>
+          </aside>
+
+          <aside class="note">
+            <strong>Myth vs fact</strong>
+            <p><b>Myth:</b> If you have PCOS, you will never be able to have a baby.</p>
+            <p><b>Fact:</b> PCOS can make getting pregnant take longer. But it is one of the most treatable causes of fertility problems, and many women with PCOS become mothers.</p>
+          </aside>
+
+          <aside class="note note--doctor">
+            <strong>See a doctor if&hellip;</strong>
+            <ul>
+              <li>You think you might have PCOS but have never been checked</li>
+              <li>Your periods have stopped for 3 months or more and you are not pregnant</li>
+              <li>You feel very sad, worried or hopeless on most days</li>
+            </ul>
+            <p>Getting checked early helps you get the right care sooner.</p>
+          </aside>
+
+          <aside class="note note--try">
+            <strong>Try this today</strong>
+            <p>Find a small notebook, or open a notes app on your phone. Call it "My PCOS Journey." On the first page, write today's date and one reason you want to feel better.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Food ============ -->
+    <section class="sec food" id="food" aria-labelledby="foodTitle">
+      <div class="wrap food__grid">
+        <div class="food__media">
+          <div class="frame frame--photo">
+            <picture><source type="image/avif" srcset="assets/img/food-01-600.avif 600w, assets/img/food-01-1000.avif 1000w, assets/img/food-01-1400.avif 1400w" sizes="(min-width: 760px) 66vw, 108vw"><source type="image/webp" srcset="assets/img/food-01-600.webp 600w, assets/img/food-01-1000.webp 1000w, assets/img/food-01-1400.webp 1400w" sizes="(min-width: 760px) 66vw, 108vw"><img data-parallax-img="0.08"   alt="A steel plate with dal, roti, a vegetable curry, a boiled egg and curd" loading="lazy" src="assets/img/food-01-1000.webp" width="1400" height="1050" decoding="async"></picture>
+          </div>
+        </div>
+
+        <div class="food__copy">
+          <h2 id="foodTitle">Food that fits your kitchen</h2>
+          <p class="tag">No strict diets. No banned foods. Just smart choices.</p>
+          <p>Rice, roti, bread, lentils (dal), beans, eggs, yoghurt (curd), vegetables and local fruit all have a place. You will not need expensive powders or special shops.</p>
+
+          <div class="plate">
+            <div class="plate__ring" role="img" aria-label="A plate: half vegetables, a quarter protein, a quarter grains"></div>
+            <ul class="plate__key">
+              <li><i class="k k--veg"></i><b>Half</b> vegetables</li>
+              <li><i class="k k--pro"></i><b>A quarter</b> protein</li>
+              <li><i class="k k--grain"></i><b>A quarter</b> grains or starchy food</li>
+            </ul>
+          </div>
+
+          <h3 class="mini">A few meals from the book</h3>
+          <ul class="meals">
+            <li><span>Besan chilla with vegetables and curd</span><em>South Asia</em></li>
+            <li><span>Ful medames with tomato, cucumber and bread</span><em>Middle East</em></li>
+            <li><span>Ugali with bean stew and sukuma wiki</span><em>East Africa</em></li>
+            <li><span>Gado-gado with egg or tofu</span><em>Southeast Asia</em></li>
+            <li><span>Jollof rice with extra vegetables and grilled fish</span><em>West Africa</em></li>
+            <li><span>Scrambled eggs with tomato and a corn tortilla</span><em>Latin America</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Toolkit ============ -->
+    <section class="sec toolkit" id="toolkit" aria-labelledby="toolTitle">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 id="toolTitle">Start this week with small, tickable steps</h2>
+          <p class="tag">Try a few from the Starter Checklist in the book. Tick them at your own pace.</p>
+        </div>
+
+        <div class="toolkit__grid">
+          <div class="check" id="check">
+            <div class="check__head">
+              <h3>This week: get ready</h3>
+              <p class="check__count" id="checkCount" aria-live="polite">0 of 7 done</p>
+            </div>
+            <div class="check__bar" aria-hidden="true"><i id="checkBar"></i></div>
+            <ul class="check__list">
+              <li><label><input type="checkbox"><span>Start your "My PCOS Journey" notebook</span></label></li>
+              <li><label><input type="checkbox"><span>Write down your three "feel better" goals</span></label></li>
+              <li><label><input type="checkbox"><span>Mark your recent period dates on the Period Tracker</span></label></li>
+              <li><label><input type="checkbox"><span>Tick your signs on the Symptom Tracker, without judging them</span></label></li>
+              <li><label><input type="checkbox"><span>Put all your medical reports and test results in one folder</span></label></li>
+              <li><label><input type="checkbox"><span>Ask your mother, sisters or aunts about PCOS, irregular periods or diabetes</span></label></li>
+              <li><label><input type="checkbox"><span>Choose one tiny habit and link it to something you already do</span></label></li>
+            </ul>
+            <p class="check__done" id="checkDone" hidden>Every single tick is progress, and you are already on your way.</p>
+          </div>
+
+          <div class="toolkit__side">
+            <div class="frame frame--photo frame--short">
+              <picture><source type="image/avif" srcset="assets/img/lifestyle-03-600.avif 600w, assets/img/lifestyle-03-1000.avif 1000w" sizes="(min-width: 760px) 48vw, 108vw"><source type="image/webp" srcset="assets/img/lifestyle-03-600.webp 600w, assets/img/lifestyle-03-1000.webp 1000w" sizes="(min-width: 760px) 48vw, 108vw"><img data-parallax-img="0.08" alt="A woman smiling as she writes in a notebook at a sunny table" loading="lazy" src="assets/img/lifestyle-03-1000.webp" width="1000" height="625" decoding="async"></picture>
+            </div>
+
+            <div class="sheets">
+              <h3>12 worksheets you can print</h3>
+              <ul class="chips">
+                <li>Period Tracker</li>
+                <li>Symptom Tracker</li>
+                <li>Family Health Map</li>
+                <li>Doctor Visit Checklist</li>
+                <li>Weekly Meal Planner</li>
+                <li>My Movement Week</li>
+                <li>Habit Tracker</li>
+                <li>My First Three Habits</li>
+                <li>My Health Check Card</li>
+                <li>My Support Circle</li>
+                <li>My PCOS Plan on One Page</li>
+                <li>Monthly Check-In</li>
+              </ul>
+              <p class="sheets__more"><a href="#cheat-sheets">See the 4 cheat sheets</a></p>
+              <p class="sheets__note">Print them, copy them into a notebook, or keep them on your phone.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ Cheat sheet gallery ============ -->
+    <section class="sec sheetsgal" id="cheat-sheets" aria-labelledby="sheetsTitle">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 id="sheetsTitle">Four cheat sheets to keep close</h2>
+          <p class="tag">Print them, keep them on your fridge, or save a photo on your phone.</p>
+        </div>
+        <ul class="sheets__grid">
+          <li class="sheet">
+            <button class="sheet__btn" type="button" data-lb="cs1" data-lb-src="cs1-1" data-lb-caption="PCOS-Friendly Grocery List, page 1" aria-label="Open PCOS-Friendly Grocery List">
+              <span class="sheet__paper"><picture><source type="image/avif" srcset="assets/img/pages/cs1-1-480.avif 480w, assets/img/pages/cs1-1-900.avif 900w" sizes="(min-width: 960px) 260px, (min-width: 600px) 42vw, 44vw"><source type="image/webp" srcset="assets/img/pages/cs1-1-480.webp 480w, assets/img/pages/cs1-1-900.webp 900w" sizes="(min-width: 960px) 260px, (min-width: 600px) 42vw, 44vw"><img src="assets/img/pages/cs1-1-480.webp" alt="The first page of the PCOS-Friendly Grocery List cheat sheet" width="900" height="1273" loading="lazy" decoding="async"></picture></span>
+            </button><span hidden data-lb="cs1" data-lb-src="cs1-2" data-lb-caption="PCOS-Friendly Grocery List, page 2"></span>
+            <h3>PCOS-Friendly Grocery List</h3>
+            <p>Five groups of everyday foods to tick, with local names from many kitchens.</p>
+            <p class="sheet__meta">2 pages</p>
+          </li>
+          <li class="sheet">
+            <button class="sheet__btn" type="button" data-lb="cs2" data-lb-src="cs2" data-lb-caption="Quick Meal Ideas, page 1" aria-label="Open Quick Meal Ideas">
+              <span class="sheet__paper"><picture><source type="image/avif" srcset="assets/img/pages/cs2-480.avif 480w, assets/img/pages/cs2-900.avif 900w" sizes="(min-width: 960px) 260px, (min-width: 600px) 42vw, 44vw"><source type="image/webp" srcset="assets/img/pages/cs2-480.webp 480w, assets/img/pages/cs2-900.webp 900w" sizes="(min-width: 960px) 260px, (min-width: 600px) 42vw, 44vw"><img src="assets/img/pages/cs2-480.webp" alt="The first page of the Quick Meal Ideas cheat sheet" width="900" height="1273" loading="lazy" decoding="async"></picture></span>
+            </button>
+            <h3>Quick Meal Ideas</h3>
+            <p>Eight balanced meals from South Asia, Africa, the Middle East, Southeast Asia and Latin America.</p>
+            <p class="sheet__meta">1 page</p>
+          </li>
+          <li class="sheet">
+            <button class="sheet__btn" type="button" data-lb="cs3" data-lb-src="cs3-1" data-lb-caption="Questions to Ask Your Doctor, page 1" aria-label="Open Questions to Ask Your Doctor">
+              <span class="sheet__paper"><picture><source type="image/avif" srcset="assets/img/pages/cs3-1-480.avif 480w, assets/img/pages/cs3-1-900.avif 900w" sizes="(min-width: 960px) 260px, (min-width: 600px) 42vw, 44vw"><source type="image/webp" srcset="assets/img/pages/cs3-1-480.webp 480w, assets/img/pages/cs3-1-900.webp 900w" sizes="(min-width: 960px) 260px, (min-width: 600px) 42vw, 44vw"><img src="assets/img/pages/cs3-1-480.webp" alt="The first page of the Questions to Ask Your Doctor cheat sheet" width="900" height="1273" loading="lazy" decoding="async"></picture></span>
+            </button><span hidden data-lb="cs3" data-lb-src="cs3-2" data-lb-caption="Questions to Ask Your Doctor, page 2"></span>
+            <h3>Questions to Ask Your Doctor</h3>
+            <p>Ready-made questions in eight groups. Tick two or three and take the page with you.</p>
+            <p class="sheet__meta">2 pages</p>
+          </li>
+          <li class="sheet">
+            <button class="sheet__btn" type="button" data-lb="cs4" data-lb-src="cs4-1" data-lb-caption="Simple Words Glossary, page 1" data-lb-more="5" aria-label="Open Simple Words Glossary">
+              <span class="sheet__paper"><picture><source type="image/avif" srcset="assets/img/pages/cs4-1-480.avif 480w, assets/img/pages/cs4-1-900.avif 900w" sizes="(min-width: 960px) 260px, (min-width: 600px) 42vw, 44vw"><source type="image/webp" srcset="assets/img/pages/cs4-1-480.webp 480w, assets/img/pages/cs4-1-900.webp 900w" sizes="(min-width: 960px) 260px, (min-width: 600px) 42vw, 44vw"><img src="assets/img/pages/cs4-1-480.webp" alt="The first page of the Simple Words Glossary cheat sheet" width="900" height="1273" loading="lazy" decoding="async"></picture></span>
+            </button><span hidden data-lb="cs4" data-lb-src="cs4-2" data-lb-caption="Simple Words Glossary, page 2"></span>
+            <h3>Simple Words Glossary</h3>
+            <p>Every body, medical and food word in the book, explained in one line.</p>
+            <p class="sheet__meta">7 pages</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ A real book, on any screen ============ -->
+    <section class="sec format" id="format" aria-labelledby="formatTitle">
+      <div class="wrap format__grid">
+        <div class="format__copy">
+          <h2 id="formatTitle">A real book, made to read on your phone</h2>
+          <p class="tag">Twenty chapters, short stories, helpful boxes and a toolkit at the back.</p>
+          <p>It is built like the books you love: a warm introduction, six parts, short chapters that each end with Key Takeaways, and a peek at what comes next.</p>
+          <p>Read it on your phone, tablet or computer. Keep a notebook beside you, or print the worksheets you want.</p>
+          <a class="btn btn--primary" href="https://superprofile.bio/vp/pcos--made-simple--a-kind--practical-guide-to-pcos---pcod" data-buy>Get the book</a>
+        </div>
+
+        <div class="format__media">
+          <div class="frame frame--photo format__big">
+            <picture><source type="image/avif" srcset="assets/img/book-flatlay-600.avif 600w, assets/img/book-flatlay-1000.avif 1000w, assets/img/book-flatlay-1400.avif 1400w" sizes="(min-width: 760px) 58vw, 108vw"><source type="image/webp" srcset="assets/img/book-flatlay-600.webp 600w, assets/img/book-flatlay-1000.webp 1000w, assets/img/book-flatlay-1400.webp 1400w" sizes="(min-width: 760px) 58vw, 108vw"><img data-parallax-img="0.07"   alt="The book lying on a linen cloth beside a cup of tea, a notebook, a pen and a pink lily" loading="lazy" src="assets/img/book-flatlay-1000.webp" width="1400" height="1050" decoding="async"></picture>
+          </div>
+          <div class="frame frame--photo format__small" data-parallax="-0.06">
+            <picture><source type="image/avif" srcset="assets/img/book-devices-400.avif 400w, assets/img/book-devices-700.avif 700w" sizes="(min-width: 760px) 26vw, 62vw"><source type="image/webp" srcset="assets/img/book-devices-400.webp 400w, assets/img/book-devices-700.webp 700w" sizes="(min-width: 760px) 26vw, 62vw"><img alt="The book cover shown on a tablet and a phone beside a plant and a cup of tea" loading="lazy" src="assets/img/book-devices-700.webp" width="700" height="467" decoding="async"></picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Who it's for + promises ============ -->
+    <section class="sec forwho" id="for" aria-labelledby="forTitle">
+      <div class="wrap forwho__grid">
+        <div>
+          <h2 id="forTitle">Who this book is for</h2>
+          <ul class="ticks">
+            <li>Women whose doctor has said PCOS or PCOD</li>
+            <li>Women who think they might have it, because of irregular periods, acne, extra hair or other signs</li>
+            <li>Women who were told years ago, but still feel confused</li>
+            <li>Anyone who loves a woman with PCOS, like a daughter, sister, wife or friend, and wants to help</li>
+          </ul>
+          <p class="soft">You do not need to know any science. You do not need a big budget. You only need a little curiosity and a willingness to try.</p>
+        </div>
+
+        <div class="promises">
+          <h3>Three promises</h3>
+          <dl>
+            <div><dt>Clear words</dt><dd>You will understand what is happening in your body, without confusing science.</dd></div>
+            <div><dt>Simple steps</dt><dd>You will get ideas you can start today, with the food and life you already have.</dd></div>
+            <div><dt>Kind support</dt><dd>No shame, no blame and no scary language. Ever.</dd></div>
+          </dl>
+          <aside class="note note--doctor">
+            <strong>An honest note</strong>
+            <p>Right now, there is no cure for PCOS. If someone promises you one, be careful. But PCOS can be managed very well, and many women feel calmer, clearer and more in control. This book is a helper, not a replacement for your doctor.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Photo band: small steps ============ -->
+    <section class="band band--two" aria-label="A message from the book">
+      <div class="band__media"><picture><source type="image/avif" srcset="assets/img/lifestyle-02-800.avif 800w, assets/img/lifestyle-02-1200.avif 1200w, assets/img/lifestyle-02-1586.avif 1586w" sizes="100vw"><source type="image/webp" srcset="assets/img/lifestyle-02-800.webp 800w, assets/img/lifestyle-02-1200.webp 1200w, assets/img/lifestyle-02-1586.webp 1586w" sizes="100vw"><img data-parallax-img="0.1" alt="A woman walking through a sunny garden path, smiling and relaxed" loading="lazy" src="assets/img/lifestyle-02-1200.webp" width="1586" height="992" decoding="async"></picture></div>
+      <div class="wrap band__wrap band__wrap--right">
+        <blockquote class="note note--quote">
+          <p>Small changes, done often, are much more likely to last.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ Buy ============ -->
+    <section class="sec buy" id="buy" aria-labelledby="buyTitle">
+      <div class="wrap buy__grid">
+        <div class="buy__media">
+          <div class="frame frame--photo">
+            <picture><source type="image/avif" srcset="assets/img/book-hero-480.avif 480w, assets/img/book-hero-800.avif 800w, assets/img/book-hero-1200.avif 1200w" sizes="(min-width: 760px) 42vw, 92vw"><source type="image/webp" srcset="assets/img/book-hero-480.webp 480w, assets/img/book-hero-800.webp 800w, assets/img/book-hero-1200.webp 1200w" sizes="(min-width: 760px) 42vw, 92vw"><img alt="The book PCOS, Made Simple standing upright beside a pink lily" loading="lazy" src="assets/img/book-hero-800.webp" width="1200" height="1200" decoding="async"></picture>
+          </div>
+        </div>
+
+        <div class="buy__copy">
+          <h2 id="buyTitle">Start with one small step</h2>
+          <p class="tag">PCOS, Made Simple, by Team Made Simple</p>
+
+          <ul class="ticks ticks--tight">
+            <li>The full book: an introduction, 20 chapters and a conclusion</li>
+            <li>Your PCOS Starter Checklist</li>
+            <li>12 printable worksheets and trackers</li>
+            <li>4 cheat sheets, including a simple A to Z glossary</li>
+          </ul>
+
+          <p class="price" id="price"><span class="price__now">₹499</span> <s class="price__was"><span class="sr-only">Usual price </span>₹699</s></p>
+          <a class="btn btn--primary btn--lg" href="https://superprofile.bio/vp/pcos--made-simple--a-kind--practical-guide-to-pcos---pcod" data-buy id="buyMain">Get the book</a>
+          <p class="buy__fine">A digital book you can read on your phone, tablet or computer.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="sec faq" id="faq" aria-labelledby="faqTitle">
+      <div class="wrap">
+        <h2 id="faqTitle">Questions, answered simply</h2>
+
+        <div class="faq__list">
+          <details>
+            <summary>Is this book medical advice?</summary>
+            <p>No. This book is a helper, not a replacement for your doctor. Your doctor can examine you, do tests and give medicines if you need them. Never start, stop or change a medicine or supplement without talking to your doctor first.</p>
+          </details>
+          <details>
+            <summary>Does the book promise a cure?</summary>
+            <p>No. Right now there is no cure for PCOS, and the book says so clearly. It shows you how PCOS can be managed very well, with daily habits and good medical care.</p>
+          </details>
+          <details>
+            <summary>What is the difference between PCOD, PCOS and PMOS?</summary>
+            <p>People in some countries say PCOD and others say PCOS, and both are commonly used for the same problem. In 2026, PCOS was officially renamed PMOS. The book explains this simply, then uses "PCOS" because it is the name most readers know.</p>
+          </details>
+          <details>
+            <summary>I do not know much English or science. Will I understand it?</summary>
+            <p>Yes. It was written for women everywhere, including readers whose second or third language is English. The sentences are short, and every medical word is explained in one simple line, right where you see it.</p>
+          </details>
+          <details>
+            <summary>Will the food ideas work in my kitchen?</summary>
+            <p>They are built for many kitchens and budgets: rice, flatbread, bread, lentils, beans, eggs, yoghurt, vegetables and local fruit. No food is banned, and you do not need costly powders or special shops.</p>
+          </details>
+          <details>
+            <summary>Can slim women have PCOS too?</summary>
+            <p>Yes. The book explains that slim women can have PCOS too, and why your worth is never a number on the scale.</p>
+          </details>
+          <details>
+            <summary>Can I print the worksheets?</summary>
+            <p>Yes. Each of the 12 worksheets has its own page, so you can print only the one you need, copy it into a notebook, or keep a photo of it on your phone.</p>
+          </details>
+          <details>
+            <summary>Is it useful if I am helping a daughter, sister or friend?</summary>
+            <p>Yes. Chapter 19 covers explaining PCOS to family, talking to a partner, and helping a daughter or younger sister who shows signs.</p>
+          </details>
+          <details>
+            <summary>What format is the book?</summary>
+            <p>It is a digital book you can read on your phone, tablet or computer.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="wrap footer__row">
+      <div>
+        <p class="brand brand--footer"><span class="brand__a">PCOS,</span> <span class="brand__b">Made Simple</span></p>
+        <p class="footer__small">A kind, practical guide to PCOS and PCOD for every woman.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#inside">Inside the book</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#faq">Questions</a>
+        <a href="https://superprofile.bio/vp/pcos--made-simple--a-kind--practical-guide-to-pcos---pcod" data-buy>Get the book</a>
+      </nav>
+    </div>
+    <div class="wrap">
+      <div class="footer__legal">
+        <p>This book shares general information to help you understand PCOS. It is not a replacement for medical care. Please talk to your doctor about your own health, tests, medicines and supplements.</p>
+        <p>&copy; <span id="year">2026</span> Team Made Simple. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page viewer (Look inside + cheat sheets) -->
+  <dialog class="lb" id="lightbox" aria-labelledby="lbCaption">
+    <div class="lb__top">
+      <p class="lb__caption" id="lbCaption"></p>
+      <button class="round round--light" type="button" id="lbClose" aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="lb__stage" id="lbStage">
+      <button class="round round--light lb__prev" type="button" id="lbPrev" aria-label="Previous page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <figure class="lb__fig">
+        <picture><source type="image/avif" id="lbAvif"><source type="image/webp" id="lbWebp"><img id="lbImg" alt="" width="1400" height="1980"></picture>
+        <figcaption class="lb__more" id="lbMore" hidden></figcaption>
+      </figure>
+      <button class="round round--light lb__next" type="button" id="lbNext" aria-label="Next page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+    <p class="lb__count" id="lbCount" aria-live="polite"></p>
+  </dialog>
+
+  <!-- Sticky bar (phones) -->
+  <div class="buybar" id="buybar" aria-hidden="true">
+    <span class="buybar__t"><b>PCOS,</b> Made Simple</span>
+    <a class="btn btn--primary btn--sm" href="https://superprofile.bio/vp/pcos--made-simple--a-kind--practical-guide-to-pcos---pcod" data-buy tabindex="-1">Get the book</a>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

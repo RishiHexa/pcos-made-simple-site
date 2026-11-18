@@ -1,0 +1,14 @@
+# Cache rules for Netlify and Cloudflare Pages (other hosts ignore this file).
+# Images rarely change, so browsers keep them for 30 days.
+/assets/img/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+# Styles and scripts: kept for a day, refreshed quietly in the background.
+/assets/css/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+/assets/js/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
