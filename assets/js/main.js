@@ -97,6 +97,35 @@
     });
   }
 
+  /* ---------- Smooth scrolling (Lenis, loaded from the CDN in index.html) ----------
+     Mouse wheel and trackpad only: phones keep their own native scrolling.
+     Off for "reduce motion". If Lenis did not load, the page scrolls normally. */
+  var lenis = null;
+  var HEADER_OFFSET = 84;
+  if (!reduce && typeof window.Lenis === 'function') {
+    try {
+      lenis = new window.Lenis({ lerp: 0.09, smoothWheel: true, syncTouch: false, allowNestedScroll: true });
+      var lenisFrame = function (t) { lenis.raf(t); requestAnimationFrame(lenisFrame); };
+      requestAnimationFrame(lenisFrame);
+    } catch (err) { lenis = null; }
+  }
+  /* In-page links (#...) glide to their section, leaving room for the header. */
+  if (lenis) {
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href^="#"]');
+      if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      var id = a.getAttribute('href').slice(1);
+      var target = id ? document.getElementById(id) : null;
+      if (!target) return;
+      e.preventDefault();
+      lenis.scrollTo(target, { offset: -HEADER_OFFSET });
+      if (history.pushState) history.pushState(null, '', '#' + id);
+      /* Move keyboard focus too, without a second jump. */
+      if (!target.hasAttribute('tabindex') && !/^(A|BUTTON|INPUT|SELECT|TEXTAREA)$/.test(target.tagName)) target.setAttribute('tabindex', '-1');
+      try { target.focus({ preventScroll: true }); } catch (err) {}
+    });
+  }
+
   /* ---------- Header background after a little scroll ---------- */
   var header = $('#siteHeader');
 
@@ -250,6 +279,7 @@
         var idx = groups[g].map(function (x) { return x.src; }).indexOf(src);
         show(Math.max(0, idx), 0);
         document.documentElement.classList.add('lb-open');
+        if (lenis) lenis.stop(); /* page stays still behind the viewer */
         lb.showModal();
       });
     });
@@ -258,7 +288,8 @@
     $('#lbClose').addEventListener('click', function () { lb.close(); });
     lb.addEventListener('close', function () {
       document.documentElement.classList.remove('lb-open');
-      if (state.opener) state.opener.focus();
+      if (lenis) lenis.start();
+      if (state.opener) state.opener.focus({ preventScroll: true });
     });
     lb.addEventListener('click', function (e) { if (e.target === lb || e.target.id === 'lbStage') lb.close(); });
     lb.addEventListener('keydown', function (e) {
